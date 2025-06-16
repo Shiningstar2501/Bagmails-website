@@ -24,6 +24,9 @@
   <link rel="stylesheet" href="./assets/css/colors/grape.css">
   <link rel="preload" href="./assets/css/fonts/space.css" as="style" onload="this.rel='stylesheet'">
   <style>
+    html {
+  scroll-behavior: smooth;
+}
     .navbar.navbar-light.fixed .btn:not(.btn-expand):not(.btn-gradient) {
       background: #605dba !important;
       border-color: #605dba !important;
@@ -60,34 +63,34 @@
             <div class="offcanvas-body xl:!ml-auto lg:!ml-auto flex  flex-col !h-full">
               <ul class="navbar-nav">
                 <li class="nav-item dropdown dropdown-mega">
-                  <a class="nav-link dropdown-toggle !text-[.85rem] !tracking-[normal] hover:!text-[#605dba] after:!text-[#605dba]"
+                  <a class="nav-link !text-[.85rem] !tracking-[normal] hover:!text-[#605dba] after:!text-[#605dba]"
                     href="#">Home</a>
 
                   <!--/.dropdown-menu -->
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle !text-[.85rem] !tracking-[normal] hover:!text-[#605dba] after:!text-[#605dba]"
-                    href="#" data-bs-toggle="dropdown">How it works? </a>
+                  <a class="nav-link !text-[.85rem] !tracking-[normal] hover:!text-[#605dba] after:!text-[#605dba]"
+                    href="#how-it-works">How it works? </a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle !text-[.85rem] !tracking-[normal] hover:!text-[#605dba] after:!text-[#605dba]"
+                  <a class="nav-link !text-[.85rem] !tracking-[normal] hover:!text-[#605dba] after:!text-[#605dba]"
                     href="#" data-bs-toggle="dropdown">For Travelers</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle !text-[.85rem] !tracking-[normal] hover:!text-[#605dba] after:!text-[#605dba]"
+                  <a class="nav-link !text-[.85rem] !tracking-[normal] hover:!text-[#605dba] after:!text-[#605dba]"
                     href="#" data-bs-toggle="dropdown">For Senders</a>
                 </li>
                 <li class="nav-item dropdown dropdown-mega">
-                  <a class="nav-link dropdown-toggle !text-[.85rem] !tracking-[normal] hover:!text-[#605dba] after:!text-[#605dba]"
+                  <a class="nav-link !text-[.85rem] !tracking-[normal] hover:!text-[#605dba] after:!text-[#605dba]"
                     href="#" data-bs-toggle="dropdown">Benefits</a>
                   <!--/.dropdown-menu -->
                 </li>
                 <li class="nav-item dropdown dropdown-mega">
-                  <a class="nav-link dropdown-toggle !text-[.85rem] !tracking-[normal] hover:!text-[#605dba] after:!text-[#605dba]"
+                  <a class="nav-link !text-[.85rem] !tracking-[normal] hover:!text-[#605dba] after:!text-[#605dba]"
                     href="#" data-bs-toggle="dropdown">Testimonials</a>
                 </li>
                 <li class="nav-item dropdown dropdown-mega">
-                  <a class="nav-link dropdown-toggle !text-[.85rem] !tracking-[normal] hover:!text-[#605dba] after:!text-[#605dba]"
+                  <a class="nav-link !text-[.85rem] !tracking-[normal] hover:!text-[#605dba] after:!text-[#605dba]"
                     href="#" data-bs-toggle="dropdown">Contacts </a>
                 </li>
               </ul>
@@ -141,37 +144,41 @@
         class="container pt-36 xl:pt-[12.5rem] lg:pt-[12.5rem] md:pt-[12.5rem] pb-24 xl:pb-32 lg:pb-32 md:pb-32 !text-center !relative">
         <div class="absolute" style="top: -12%; left: 50%; transform: translateX(-50%);" data-cue="fadeIn"><img
             src="./assets/img/photos/blurry.png" alt="image"></div>
-        <div class="flex flex-col-reverse lg:flex-row items-center justify-between gap-10 mx-[-15px] relative">
+        <!-- <div class="flex flex-col-reverse lg:flex-row items-center justify-between gap-10 mx-[-15px] relative"> -->
+           <div class="flex flex-wrap mx-[-15px] !relative">
 
-          <div>
-            <div class="lg:w-6/12 xl:w-6/12 w-full px-[15px] max-w-full relative z-10">
-              <div class="absolute shape grape w-5 hidden xl:block lg:block" style="top: -5%; left: -15%;"
-                data-cue="fadeIn" data-delay="1500"><img src="./assets/img/svg/pie.svg"
-                  class="svg-inject icon-svg !w-full !h-full" alt="image"></div>
-              <div class="absolute shape violet !w-[2.5rem] hidden xl:block lg:block" style="bottom: 30%; left: -20%;"
-                data-cue="fadeIn" data-delay="1500"><img src="./assets/img/svg/scribble.svg"
-                  class="svg-inject icon-svg !w-full !h-full" alt="image"></div>
-              <div class="absolute shape fuchsia w-6 hidden xl:block lg:block"
-                style="top: 0%; right: -25%; transform: rotate(70deg);" data-cue="fadeIn" data-delay="1500"><img
-                  src="./assets/img/svg/tri.svg" class="svg-inject icon-svg !w-full !h-full" alt="image"></div>
-              <div class="absolute shape yellow w-6 hidden xl:block lg:block" style="bottom: 25%; right: -17%;"
-                data-cue="fadeIn" data-delay="1500"><img src="./assets/img/svg/circle.svg"
-                  class="svg-inject icon-svg !w-full !h-full" alt="image"></div>
+          <!-- <div> -->
+           <div class="lg:w-8/12 xl:w-8/12 xxl:w-7/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto !relative">
+               <div class="absolute shape grape w-5 hidden xl:block lg:block" style="top: -5%; left: -15%;"
+              data-cue="fadeIn" data-delay="1500"><img src="./assets/img/svg/pie.svg"
+                class="svg-inject icon-svg !w-full !h-full" alt="image"></div>
+            <div class="absolute shape violet !w-[2.5rem] hidden xl:block lg:block" style="bottom: 30%; left: -20%;"
+              data-cue="fadeIn" data-delay="1500"><img src="./assets/img/svg/scribble.svg"
+                class="svg-inject icon-svg !w-full !h-full" alt="image"></div>
+            <div class="absolute shape fuchsia w-6 hidden xl:block lg:block"
+              style="top: 0%; right: -25%; transform: rotate(70deg);" data-cue="fadeIn" data-delay="1500"><img
+                src="./assets/img/svg/tri.svg" class="svg-inject icon-svg !w-full !h-full" alt="image"></div>
+            <div class="absolute shape yellow w-6 hidden xl:block lg:block" style="bottom: 25%; right: -17%;"
+              data-cue="fadeIn" data-delay="1500"><img src="./assets/img/svg/circle.svg"
+                class="svg-inject icon-svg !w-full !h-full" alt="image"></div>
               <div data-cues="slideInDown" data-group="page-title">
-                <h1 class="xl:text-[2.2rem] text-[calc(1.1rem_+_1.8vw)]font-semibold leading-tight mb-5">
+              <h1
+                class="xl:text-[3.2rem] text-[calc(1.445rem_+_2.34vw)] font-semibold !leading-[1.15] mb-5 md:mx-10 lg:mx-0 xl:mx-0">
                   Send & Carry Packages Smarter with Bagmails <br><span class="rotator-fade text-[#605dba] ">
                     Send parcels faster with real travelers. ,
-                    Earn money by carrying items on your trip.,
-                    Ship smart and save more.,
+                    Earn money by carrying items on your trip. ,
+                    Ship smart and save more., 
                     Turn your travel into extra income.,
                     Connect. Travel. Deliver.,
                     The smarter way to ship items.,
                     Crowdshipping made simple.,
                     Bagmails: Where senders meet travelers..</span></h1>
-                <p class="text-[1rem] leading-[1.5] mb-6 text-[#4a4a4a]">Bagmails connects travelers and senders to
+            <!-- <p class="text-[1rem] leading-[1.5] mb-6 text-[#4a4a4a]">
+Bagmails connects travelers and senders to
                   deliver
-                  parcels quickly, affordably, and securely.</p>
+                  parcels quickly, affordably, and securely.</p> -->
               </div>
+            </div>
               <!-- <div class="xl:flex lg:flex md:flex justify-center" data-cues="slideInDown" data-delay="600">
                 <span><a href="#demos"
                     class="btn btn-lg btn-grape text-white !bg-[#605dba] border-[#605dba] hover:text-white hover:bg-[#605dba] hover:border-[#605dba] focus:shadow-[rgba(92,140,229,1)] active:text-white active:bg-[#605dba] active:border-[#605dba] disabled:text-white disabled:bg-[#605dba] disabled:border-[#605dba] btn-icon btn-icon-end !rounded-[0.8rem] xl:mx-1 lg:mx-1 md:mx-1 mb-2 xl:mb-0 lg:mb-0 md:mb-0 scroll">Sender<i
@@ -184,12 +191,12 @@
               <!-- /div -->
             </div>
             <!-- /column -->
-          </div>
-          <div
+          <!-- </div> -->
+          <!-- <div
             class="lg:w-5/12 xl:w-5/12 w-full px-[15px] mt-10 lg:mt-0 relative z-10 flex justify-center items-center">
             <img src="./assets/img/hero-illustration.png" alt="Smart delivery illustration"
               class="max-w-[280px] w-full h-auto object-contain rounded-md shadow-md">
-          </div>
+          </div> -->
           <!-- /.row -->
         </div>
         <!-- /.container -->
@@ -309,7 +316,7 @@
                 </figure>
               </div>
             </div>
-            <!--/.swiper-wrapper -->
+            /.swiper-wrapper -->
         <!-- </div> -->
         <!-- /.swiper -->
         <!-- </div> -->
@@ -320,7 +327,7 @@
       <div class="container !pb-[4.5rem] xl:!pb-24 lg:!pb-24 md:!pb-24">
         <div class="flex flex-wrap mx-[-15px] !mb-8">
           <div class="w-full flex-[0_0_auto] px-[15px] max-w-full !mt-[-10rem]">
-            <figure class="rounded-[0.4rem]"><img class="rounded-[0.4rem]" src="./assets/img/photos/about5.jpg" srcset="./assets/img/photos/about5@2x.jpg 2x" alt="image"></figure>
+            <figure class="rounded-[0.4rem]"><img class="rounded-[0.4rem]" src="./assets/img/hero-illustration.png" srcset="./assets/img/photos/about5@2x.jpg 2x" alt="image"></figure>
             <div class="flex flex-wrap mx-[-15px]">
               <div class="xl:w-10/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto">
                 <div class="card image-wrapper bg-full bg-image bg-overlay bg-overlay-400 text-white mt-[-1.25rem] xl:!mt-0 lg:!mt-0  xl:-translate-y-2/4 lg:-translate-y-2/4 bg-cover [background-size:100%] bg-[center_center] bg-no-repeat !bg-scroll !relative z-0 before:rounded-[0.4rem] before:bg-[rgba(30,34,40,.4)] before:content-[''] before:block before:absolute before:z-[1] before:w-full before:h-full before:left-0 before:top-0" data-image-src="./assets/img/photos/bg3.jpg">
@@ -384,8 +391,8 @@
           </div>
           <!--/column -->
           <div class="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] xl:px-[20px] lg:px-[20px] px-[15px] mt-[40px] max-w-full">
-            <h2 class="text-[calc(1.305rem_+_0.66vw)] font-bold xl:text-[1.8rem] leading-[1.3] !mb-3">What We Do?</h2>
-            <p class="lead !mb-8 xxl:!pr-2 !text-[1.05rem] !leading-[1.6]">The full service we are offering is <span class="relative z-[2] whitespace-nowrap after:content-[''] after:block after:absolute after:w-[102.5%] after:h-[30%] after:left-[-1.5%] after:z-[-1] after:transition-all after:duration-[0.2s] after:ease-in-out after:mt-0 after:rounded-[5rem] after:bottom-[9%] motion-reduce:after:transition-none after:bg-[rgba(63,120,224,.12)]">specifically</span> designed to meet your business needs and projects.</p>
+            <h2 class="text-[calc(1.305rem_+_0.66vw)] font-bold xl:text-[1.8rem] leading-[1.3] !mb-3" id="how-it-works">How Bagmails Works?</h2>
+            <p class="lead !mb-8 xxl:!pr-2 !text-[1.05rem] !leading-[1.6]">Bagmails connects senders who want to ship items with <span class="relative z-[2] whitespace-nowrap after:content-[''] after:block after:absolute after:w-[102.5%] after:h-[30%] after:left-[-1.5%] after:z-[-1] after:transition-all after:duration-[0.2s] after:ease-in-out after:mt-0 after:rounded-[5rem] after:bottom-[9%] motion-reduce:after:transition-none after:bg-[rgba(63,120,224,.12)]">travelers</span> dalready heading in that direction—saving time and money for both.</p>
             <div class="flex flex-wrap mx-[-15px] xl:mx-[-25px] mt-[-30px]">
               <div class="md:w-6/12 lg:w-full xl:w-6/12 w-full flex-[0_0_auto] xl:px-[25px] px-[15px] max-w-full mt-[30px]">
                 <div class="flex flex-row">
@@ -393,8 +400,8 @@
                     <div class="icon btn btn-circle btn-lg btn-soft-primary pointer-events-none mr-5 xl:text-[1.3rem] w-12 h-12 text-[calc(1.255rem_+_0.06vw)] inline-flex items-center justify-center leading-none p-0 !rounded-[100%]"> <i class="text-[calc(1.255rem_+_0.06vw)] before:content-['\ec50'] uil uil-phone-volume"></i> </div>
                   </div>
                   <div>
-                    <h4 class="!mb-1">24/7 Support</h4>
-                    <p class="!mb-0">Nulla vitae elit libero pharetra augue dapibus.</p>
+                    <h4 class="!mb-1">Post Your Delivery</h4>
+                    <p class="!mb-0">Senders add their package info—destination, size, and reward.</p>
                   </div>
                 </div>
               </div>
@@ -405,8 +412,8 @@
                     <div class="icon btn btn-circle btn-lg btn-soft-primary pointer-events-none mr-5 xl:text-[1.3rem] w-12 h-12 text-[calc(1.255rem_+_0.06vw)] inline-flex items-center justify-center leading-none p-0 !rounded-[100%]"> <i class="text-[calc(1.255rem_+_0.06vw)] before:content-['\ecb3'] uil uil-shield-exclamation"></i> </div>
                   </div>
                   <div>
-                    <h4 class="!mb-1">Secure Payments</h4>
-                    <p class="!mb-0">Vivamus sagittis lacus augue laoreet vel.</p>
+                    <h4 class="!mb-1">Traveler Accepts</h4>
+                    <p class="!mb-0">A traveler on the same route picks the request and contacts the sender.</p>
                   </div>
                 </div>
               </div>
@@ -417,13 +424,13 @@
                     <div class="icon btn btn-circle btn-lg btn-soft-primary pointer-events-none mr-5 xl:text-[1.3rem] w-12 h-12 text-[calc(1.255rem_+_0.06vw)] inline-flex items-center justify-center leading-none p-0 !rounded-[100%]"> <i class="text-[calc(1.255rem_+_0.06vw)] before:content-['\ebb2'] uil uil-laptop-cloud"></i> </div>
                   </div>
                   <div>
-                    <h4 class="!mb-1">Daily Updates</h4>
-                    <p class="!mb-0">Cras mattis consectetur purus sit amet.</p>
+                    <h4 class="!mb-1">Confirm & Deliver</h4>
+                    <p class="!mb-0">The package is delivered in person, and the traveler gets rewarded.</p>
                   </div>
                 </div>
               </div>
               <!--/column -->
-              <div class="md:w-6/12 lg:w-full xl:w-6/12 w-full flex-[0_0_auto] xl:px-[25px] px-[15px] max-w-full mt-[30px]">
+              <!-- <div class="md:w-6/12 lg:w-full xl:w-6/12 w-full flex-[0_0_auto] xl:px-[25px] px-[15px] max-w-full mt-[30px]">
                 <div class="flex flex-row">
                   <div>
                     <div class="icon btn btn-circle btn-lg btn-soft-primary pointer-events-none mr-5 xl:text-[1.3rem] w-12 h-12 text-[calc(1.255rem_+_0.06vw)] inline-flex items-center justify-center leading-none p-0 !rounded-[100%]"> <i class="text-[calc(1.255rem_+_0.06vw)] before:content-['\e9d3'] uil uil-chart-line"></i> </div>
@@ -433,7 +440,7 @@
                     <p class="!mb-0">Aenean lacinia bibendum nulla sed consectetur.</p>
                   </div>
                 </div>
-              </div>
+              </div> -->
               <!--/column -->
             </div>
             <!--/.row -->
