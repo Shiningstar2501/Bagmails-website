@@ -63,3 +63,9 @@ Purpose: Site links & contact info
 Use From Template: Footer (footer-1)
 
 Navigation, social icons, contact email
+
+
+
+
+
+https://github.com/Appfoster/bagmails-website.git --> to clone
